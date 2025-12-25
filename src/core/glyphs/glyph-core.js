@@ -269,7 +269,7 @@ export const Glyphs = {
 
     if (glyph.type !== "companion") {
       if (RealityUpgrade(9).isLockingMechanics) {
-        if (this.activeWithoutCompanion.length > 0) {
+        if (this.activeWithoutCompanion.length > 1) {
           RealityUpgrade(9).tryShowWarningModal("equip another non-Companion Glyph");
           return;
         }
